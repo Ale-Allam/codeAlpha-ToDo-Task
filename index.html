@@ -5,23 +5,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>ToDo</title>
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+
+  <title>Todoify</title>
 </head>
 
 <body>
+  <div class="app-heading">
+    <div>
+      <h1 class="app-heading__name">ToDo<span>ify</span></h1>
+    </div>
+  </div>
   <!-- App Container -->
   <div class="app container">
     <div class="app__form-container">
       <form class="app__form" action="">
-        <input class="app__input" type="text" id="todo">
-        <button class="app__submit" id="app-submit">Add</button>
+        <img class="app__image" src="image/todo-bunny.png" alt="">
+        <input class="app__input" type="text" id="todo" value="First ToDo">
+        <button class="app__submit circul-style" id="app-submit">Add</button>
       </form>
     </div>
 
     <div class="app__list-container">
       <div class="app__list">
-        <div class="app__list-todo">
-
+        <div class="app__list-todo circul-style">
+          First ToDo
+          <button class="app__list-todo-delete"></button>
+        </div>
+        <div class="app__list-todo circul-style">
+          Secound ToDo
+          <button class="app__list-todo-delete"></button>
+        </div>
+        <div class="app__list-todo circul-style">
+          Third ToDo
+          <button class="app__list-todo-delete"></button>
         </div>
       </div>
     </div>
