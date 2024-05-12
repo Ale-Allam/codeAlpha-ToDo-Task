@@ -15,35 +15,26 @@
 </head>
 
 <body>
-  <div class="app-heading">
-    <div>
-      <h1 class="app-heading__name">ToDo<span>ify</span></h1>
-    </div>
-  </div>
-  <!-- App Container -->
-  <div class="app container">
-    <div class="app__form-container">
-      <form class="app__form" action="">
-        <img class="app__image" src="image/todo-bunny.png" alt="">
-        <input class="app__input" type="text" id="todo" value="First ToDo">
-        <button class="app__submit circul-style" id="app-submit">Add</button>
-      </form>
+  <div class="container">
+
+    <div class="app-heading">
+      <div>
+        <h1 class="app-heading__name">ToDo<span>ify</span></h1>
+      </div>
+
+      <div class="app__form-container">
+        <form class="app__form" action="">
+          <img class="app__image" src="image/todo-bunny.png" alt="">
+          <input class="app__input" type="text" id="todo" placeholder="What's Your ToDo?">
+          <button class="app__submit circul-style" id="app-submit">Add</button>
+        </form>
+      </div>
+
     </div>
 
-    <div class="app__list-container">
-      <div class="app__list">
-        <div class="app__list-todo circul-style">
-          First ToDo
-          <button class="app__list-todo-delete"></button>
-        </div>
-        <div class="app__list-todo circul-style">
-          Secound ToDo
-          <button class="app__list-todo-delete"></button>
-        </div>
-        <div class="app__list-todo circul-style">
-          Third ToDo
-          <button class="app__list-todo-delete"></button>
-        </div>
+    <div class="app">
+      <div class="app__list" id="app-list">
+
       </div>
     </div>
   </div>
