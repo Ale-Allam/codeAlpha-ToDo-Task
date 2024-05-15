@@ -210,3 +210,90 @@ body {
 .circul-style:hover .app__list-todo-delete {
   transform: translate(0%, -50%);
 }
+
+
+.checkbox {
+  display: block;
+  margin-bottom: 25px;
+  margin-top: 40px;
+}
+
+/* Styles for __custominput */
+.custominput {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+/* Styles for __customlabel */
+.customlabel {
+  position: relative;
+  cursor: pointer;
+}
+
+.customlabel:before {
+  content: '';
+  --webkit-appearance: none;
+  background-color: transparent;
+  border: 1px solid slateblue;
+  border-radius: 5px;
+  padding: 12px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.custominput:checked+.customlabel:before {
+  background-color: purple;
+  ;
+}
+
+.customlabel:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 6px;
+  height: 15px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  scale: 0;
+  transition: .3s;
+  transition-timing-function: cubic-bezier(0, 2.13, 1, -1.26);
+}
+
+.custominput:checked+.customlabel:after {
+  scale: 1;
+}
+
+/* Additional styles for checkboxes */
+.checkbox--check {
+  margin: 40px 0 30px;
+}
+
+.checkbox--yes {
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.checkbox--details {
+  font-weight: 800;
+  color: peru;
+}
+
+/* Styles for forgetname and forgetpass */
+.forgetname,
+.forgetpass {
+  color: palegreen;
+  margin: 5px 0;
+  font-weight: 800;
+  cursor: pointer;
+}
